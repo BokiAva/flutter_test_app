@@ -416,13 +416,13 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "test_app",
+      "name": "flutter_test_app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-01-20T09:51:23.722559Z",
+  "generated": "2020-01-20T12:20:35.813677Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }
