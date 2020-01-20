@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "588831778114",
+    "firebase_url": "https://flutter-testing-project.firebaseio.com",
+    "project_id": "flutter-testing-project",
+    "storage_bucket": "flutter-testing-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588831778114:android:cbfae5fe441ba4a7da94db",
+        "android_client_info": {
+          "package_name": "boki.company"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588831778114-f1ehspol4t3df6kv73aumgfok99sk73b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQBhLddBGu6-BoDLexaSXgK8ohZg2qoDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588831778114-f1ehspol4t3df6kv73aumgfok99sk73b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
