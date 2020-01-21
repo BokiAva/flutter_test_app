@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:588831778114:android:cbfae5fe441ba4a7da94db",
         "android_client_info": {
-          "package_name": "boki.company"
+          "package_name": "com.example.flutter_test_app"
         }
       },
       "oauth_client": [
