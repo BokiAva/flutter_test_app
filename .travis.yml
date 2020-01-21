@@ -220,6 +220,7 @@ before_install:
 
   # Accept licenses before installing components, no need to echo y for each component
   - yes | sdkmanager --licenses >/dev/null
+  - chmod +x ./script/android-wait-for-emulator.sh
 
 install:
   # Download SDK tools
