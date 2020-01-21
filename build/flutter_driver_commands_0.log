@@ -1,0 +1,12 @@
+2020-01-16 11:58:45.197841 >>> {command: get_health}
+2020-01-16 11:58:46.549296 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2020-01-16 11:58:46.568161 >>> {command: get_text, finderType: ByValueKey, keyValueString: counter, keyValueType: String}
+2020-01-16 11:59:16.604643 >>> {command: tap, finderType: ByValueKey, keyValueString: increment, keyValueType: String}
+2020-01-16 12:08:31.135428 >>> {command: get_health}
+2020-01-16 12:08:32.243305 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2020-01-16 12:08:32.257479 >>> {command: get_text, finderType: ByValueKey, keyValueString: counter, keyValueType: String}
+2020-01-16 12:08:32.347575 <<< {isError: false, response: {text: 0}, type: _extensionType, method: ext.flutter.driver}
+2020-01-16 12:08:32.355001 >>> {command: tap, finderType: ByValueKey, keyValueString: increment, keyValueType: String}
+2020-01-16 12:08:32.611353 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2020-01-16 12:08:32.612158 >>> {command: get_text, finderType: ByValueKey, keyValueString: counter, keyValueType: String}
+2020-01-16 12:08:32.849542 <<< {isError: false, response: {text: 1}, type: _extensionType, method: ext.flutter.driver}
