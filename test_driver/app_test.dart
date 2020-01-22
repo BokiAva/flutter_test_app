@@ -10,6 +10,15 @@ void main() {
     final counterTextFinder = find.byValueKey('counter');
     final buttonFinder = find.byValueKey('increment');
 
+    isPresent(SerializableFinder byValueKey, FlutterDriver driver, {Duration timeout = const Duration(seconds: 1)}) async {
+        try {
+          await driver.waitFor(byValueKey,timeout: timeout);
+          return true;
+        } catch(exception) {
+          return false;
+        }
+    }
+
     FlutterDriver driver;
 
     // Connect to the Flutter driver before running any tests.
@@ -35,6 +44,14 @@ void main() {
 
       // Then, verify the counter text is incremented by 1.
       expect(await driver.getText(counterTextFinder), "1");
+    });
+
+    test('Check if + button is still visible', () async {
+      // First, tap the button.
+      await driver.tap(buttonFinder);
+
+      // Then, check if the button is still present
+      expect(await isPresent(buttonFinder, driver), true);
     });
   });
 }

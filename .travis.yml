@@ -307,9 +307,6 @@ install:
   - flutter doctor -v
 
 before_script:
-  # Needed to update flutter to be compatible with local app version
-  # - flutter upgrade
-
   # Clone Flutter
   # We clone the Flutter beta branch. You should clone whatever branch
   # you know works for building production apps.
