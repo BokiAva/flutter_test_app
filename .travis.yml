@@ -223,7 +223,7 @@ before_install:
   - chmod +x ./script/android-wait-for-emulator.sh
 
 install:
-  - snap install kotlin
+  - sudo snap install kotlin --classic
   # Download SDK tools
   - sdkmanager "platform-tools" >/dev/null
   - sdkmanager "tools" >/dev/null # A second time per Travis docs, gets latest versions
