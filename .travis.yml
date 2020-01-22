@@ -232,7 +232,6 @@ install:
   - sdkmanager "platforms;android-29" >/dev/null # We need the API of the current compileSdkVersion from gradle.properties  -
 
   - sdkmanager "emulator" >/dev/null
-  - flutter upgrade
    # Fixed in version 29.3.1 https://androidstudio.googleblog.com/2019/12/emulator-2930-stable.html
    # Pinning should no longer be necessary: https://issuetracker.google.com/issues/145622251
 #  - |
@@ -308,6 +307,7 @@ install:
   - flutter doctor -v
 
 before_script:
+    - flutter upgrade
   # wait for emulator to finish startup
   - ./script/android-wait-for-emulator.sh
   # unlock screen
