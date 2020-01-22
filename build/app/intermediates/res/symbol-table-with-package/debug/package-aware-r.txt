@@ -1,4 +1,4 @@
-boki.company
+com.example.flutter_test_app
 attr alpha
 attr buttonSize
 attr circleCrop

@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="boki.company"
+3    package="com.example.flutter_test_app"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 16    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -36,39 +36,39 @@
 26         FlutterApplication and put your custom class here.
 27    -->
 28    <application
-28-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:8:5-29:19
+28-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:8:5-29:19
 29        android:name="io.flutter.app.FlutterApplication"
-29-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:9:9-57
+29-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:9:9-57
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 30-->[androidx.core:core:1.0.0] /Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/c1da7862c7abb8e426855a3f78caf221/core-1.0.0/AndroidManifest.xml:22:18-86
 31        android:debuggable="true"
 32        android:icon="@mipmap/ic_launcher"
-32-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:11:9-43
-33        android:label="test_app" >
-33-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:10:9-33
+32-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:11:9-43
+33        android:label="flutter_test_app" >
+33-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:10:9-41
 34        <activity
-34-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:12:9-23:20
-35            android:name="com.example.test_app.MainActivity"
-35-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:13:13-41
+34-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:12:9-23:20
+35            android:name="com.example.flutter_test_app.MainActivity"
+35-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:13:13-41
 36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-36-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:16:13-163
+36-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:16:13-163
 37            android:hardwareAccelerated="true"
-37-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:17:13-47
+37-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:17:13-47
 38            android:launchMode="singleTop"
-38-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:14:13-43
+38-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:14:13-43
 39            android:theme="@style/LaunchTheme"
-39-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:15:13-47
+39-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:15:13-47
 40            android:windowSoftInputMode="adjustResize" >
-40-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:18:13-55
+40-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:18:13-55
 41            <intent-filter>
-41-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:19:13-22:29
+41-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:19:13-22:29
 42                <action android:name="android.intent.action.MAIN" />
-42-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:20:17-68
-42-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:20:25-66
+42-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:20:17-68
+42-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:20:25-66
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:21:17-76
-44-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:21:27-74
+44-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:21:17-76
+44-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:21:27-74
 45            </intent-filter>
 46        </activity>
 47        <!--
@@ -76,11 +76,11 @@
 49             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 50        -->
 51        <meta-data
-51-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:26:9-28:33
+51-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:26:9-28:33
 52            android:name="flutterEmbedding"
-52-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:27:13-44
+52-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:27:13-44
 53            android:value="2" />
-53-->/Users/bojanmilicevic/Desktop/flutter_test_app/android/app/src/main/AndroidManifest.xml:28:13-30
+53-->/Users/bojanmilicevic/Documents/AVA/flutter_test_app/android/app/src/main/AndroidManifest.xml:28:13-30
 54
 55        <activity
 55-->[com.google.firebase:firebase-auth:19.2.0] /Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
@@ -206,7 +206,7 @@
 120-->[com.google.firebase:firebase-common:19.3.0] /Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/1534f8786ed51827f0e2c15988c21ec4/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
 121            android:name="com.google.firebase.provider.FirebaseInitProvider"
 121-->[com.google.firebase:firebase-common:19.3.0] /Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/1534f8786ed51827f0e2c15988c21ec4/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-122            android:authorities="boki.company.firebaseinitprovider"
+122            android:authorities="com.example.flutter_test_app.firebaseinitprovider"
 122-->[com.google.firebase:firebase-common:19.3.0] /Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/1534f8786ed51827f0e2c15988c21ec4/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
 123            android:exported="false"
 123-->[com.google.firebase:firebase-common:19.3.0] /Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/1534f8786ed51827f0e2c15988c21ec4/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
