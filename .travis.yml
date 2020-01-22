@@ -31,7 +31,14 @@
 
 language: generic
 dist: bionic
-
+addons:
+  apt:
+    # Flutter depends on /usr/lib/x86_64-linux-gnu/libstdc++.so.6 version GLIBCXX_3.4.18
+    sources:
+      - ubuntu-toolchain-r-test # if we don't specify this, the libstdc++6 we get is the wrong version
+    packages:
+      - libstdc++6
+      - fonts-droid
 # specify global envs and jobs
 env:
   global:
@@ -223,7 +230,7 @@ before_install:
   - chmod +x ./script/android-wait-for-emulator.sh
 
 install:
-  - sudo snap install kotlin --classic
+  # - sudo snap install kotlin --classic
   # Download SDK tools
   - sdkmanager "platform-tools" >/dev/null
   - sdkmanager "tools" >/dev/null # A second time per Travis docs, gets latest versions
