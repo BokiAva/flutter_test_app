@@ -4,24 +4,7 @@
             "outputFile": "/Users/bojanmilicevic/Documents/AVA/flutter_test_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
             "map": [
                 {
-                    "source": "/Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/2179f0c2c6b656d2405e404b1d7c3e80/jetified-play-services-basement-17.0.0/res/values-ca/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "193",
-                        "endOffsets": "440"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1264",
-                        "endColumns": "193",
-                        "endOffsets": "1453"
-                    }
-                },
-                {
-                    "source": "/Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/res/values-ca/values.xml",
+                    "source": "/Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/e859aef47f78796a45d041e98e31c47a/play-services-base-17.1.0/res/values-ca/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/c1da7862c7abb8e426855a3f78caf221/core-1.0.0/res/values-ca/values-ca.xml",
+                    "source": "/Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/a35504670588cd4a6aa39bdc15c6c140/jetified-play-services-basement-17.0.0/res/values-ca/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "193",
+                        "endOffsets": "440"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1264",
+                        "endColumns": "193",
+                        "endOffsets": "1453"
+                    }
+                },
+                {
+                    "source": "/Users/bojanmilicevic/.gradle/caches/transforms-2/files-2.1/4dcaa2c0eda5aa91b8138374119f640d/core-1.0.0/res/values-ca/values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
