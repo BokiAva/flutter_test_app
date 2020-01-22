@@ -193,8 +193,6 @@ before_install:
 
   - java -version
 
-  - kotlin -version
-
   # Set up KVM
   - sudo apt-get -y --no-install-recommends install bridge-utils libpulse0 libvirt-bin qemu-kvm virtinst ubuntu-vm-builder > /dev/null
   # add travis user to groups
@@ -225,6 +223,7 @@ before_install:
   - chmod +x ./script/android-wait-for-emulator.sh
 
 install:
+  - snap install kotlin
   # Download SDK tools
   - sdkmanager "platform-tools" >/dev/null
   - sdkmanager "tools" >/dev/null # A second time per Travis docs, gets latest versions
