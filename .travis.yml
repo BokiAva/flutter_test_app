@@ -307,7 +307,7 @@ install:
   - flutter doctor -v
 
 before_script:
-    - flutter upgrade
+  - flutter upgrade
   # wait for emulator to finish startup
   - ./script/android-wait-for-emulator.sh
   # unlock screen
