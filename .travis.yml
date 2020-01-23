@@ -1,7 +1,3 @@
-# ! This configuration file was copied (and adapted) from the https://github.com/mmcc007/default_flutter_app
-# * Useful resources for setting up unit, widget and integration testing with IOS and Android emulators on Travis-CI:
-# -> https://medium.com/@nocnoc/flutter-unit-widget-and-integration-testing-with-ios-and-android-emulators-on-travis-ci-df17ed7c3be
-
 # Run android emulator on accelerated intel CPU
 # or on emulated ARM CPU.
 # Includes test.
@@ -33,8 +29,8 @@
 # "https://en.wikipedia.org/wiki/Android_(operating_system)#Platform_information"
 # Note: Flutter supports down to API 16
 
-# language: generic
-# dist: bionic
+language: generic
+dist: bionic
 
 # specify global envs and jobs
 env:
@@ -193,7 +189,7 @@ jobs:
 
 before_install:
   # check if hardware acceleration is enabled
-  # - cat /proc/cpuinfo|grep vmx
+  - cat /proc/cpuinfo|grep vmx
 
   - java -version
 
@@ -308,7 +304,12 @@ install:
   - JDK="${TARGET_JDK}"
   - source ~/.install-jdk-travis.sh
 
+  - flutter doctor -v
+
 before_script:
+  # Needed to update flutter to be compatible with local app version
+  # - flutter upgrade
+
   # Clone Flutter
   # We clone the Flutter beta branch. You should clone whatever branch
   # you know works for building production apps.
@@ -318,8 +319,7 @@ before_script:
   # worked reasonably well for us and we find stable is usually too outdated
   # and has too many missing framework features.
   - git clone https://github.com/flutter/flutter.git -b beta --depth 1
-  - flutter doctor -v
-
+  
   # Add Flutter to the PATH environment variable.
   - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
   # wait for emulator to finish startup
@@ -328,11 +328,8 @@ before_script:
   - adb shell input keyevent 82 &
 
 script:
-  # run integration tests with retries
+  # run test with retries
   - flutter driver test_driver/app.dart
-
-  # run widget tests
-  - ./flutter/bin/flutter test
 
 #before_cache:
 #  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
