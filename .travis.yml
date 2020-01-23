@@ -1,5 +1,4 @@
 jobs:
-  - API=28 ABI=x86         GOO=default
   fast_finish: true
   # jobs that are flakey or fail consistently
   allow_failures:
