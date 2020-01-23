@@ -252,9 +252,3 @@ env:
 
           # run widget tests
           - ./flutter/bin/flutter test
-
-cache:
-  directories:
-    - $HOME/.pub-cache
-#    - $HOME/.gradle/caches/
-#    - $HOME/.gradle/wrapper/
