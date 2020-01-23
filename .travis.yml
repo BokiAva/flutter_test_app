@@ -133,7 +133,7 @@ jobs:
         - export PATH="$PATH":"$HOME/.pub-cache/bin"
         - export PATH=$PWD/flutter/bin:$PWD/flutter/bin/cache/dart-sdk/bin:$PATH
         # ! check this
-        - git clone https://github.com/flutter/flutter.git -b beta --depth 1
+        # - git clone https://github.com/flutter/flutter.git -b beta --depth 1
         - flutter doctor -v
 
         # Wait for emulator to finish startup.
