@@ -327,8 +327,8 @@ script:
   # run integration tests with retries
   - flutter driver test_driver/app.dart
 
-  # run widget tests
-- ./flutter/bin/flutter test
+    # run widget tests
+  - ./flutter/bin/flutter test
 
 #before_cache:
 #  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
