@@ -1,7 +1,3 @@
-# ! This configuration file was copied (and adapted) from the https://github.com/mmcc007/default_flutter_app
-# * Useful resources for setting up unit, widget and integration testing with IOS and Android emulators on Travis-CI:
-# -> https://medium.com/@nocnoc/flutter-unit-widget-and-integration-testing-with-ios-and-android-emulators-on-travis-ci-df17ed7c3be
-
 # Run android emulator on accelerated intel CPU
 # or on emulated ARM CPU.
 # Includes test.
