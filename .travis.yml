@@ -1,3 +1,28 @@
+# specify global envs and jobs
+env:
+  global:
+    - ANDROID_TOOLS=4333796 # android-28
+    - ANDROID_HOME=${HOME}/android-sdk
+    - GRAVIS="https://raw.githubusercontent.com/DanySK/Gravis-CI/master/"
+    - JDK="1.8" # the JDK used for running tests
+
+  # matrix of APIxABIxGOO
+  # (see "sdkmanager --list --verbose| grep ^system-images" for full list)
+  jobs:
+#    - API=29 ABI=x86_64      GOO=google_apis_playstore
+#    - API=29 ABI=x86         GOO=google_apis_playstore
+#    - API=29 ABI=x86_64      GOO=google_apis
+#    - API=29 ABI=x86         GOO=google_apis
+#    - API=29 ABI=x86_64      GOO=default
+#    - API=29 ABI=x86         GOO=default
+#
+#    - API=28 ABI=x86_64      GOO=google_apis_playstore
+#    - API=28 ABI=x86         GOO=google_apis_playstore
+#    - API=28 ABI=x86_64      GOO=google_apis
+#    - API=28 ABI=x86         GOO=google_apis
+#    - API=28 ABI=x86_64      GOO=default
+    - API=28 ABI=x86         GOO=default
+
 jobs:
   fast_finish: true
   # jobs that are flakey or fail consistently
@@ -107,12 +132,15 @@ jobs:
         - wget --quiet --output-document=flutter.tar.xz https://storage.googleapis.com/flutter_infra/releases/${FLUTTER_CHANNEL}/linux/flutter_linux_v${FLUTTER_VERSION}.tar.xz && tar xf flutter.tar.xz > /dev/null && rm flutter.tar.xz
         - export PATH="$PATH":"$HOME/.pub-cache/bin"
         - export PATH=$PWD/flutter/bin:$PWD/flutter/bin/cache/dart-sdk/bin:$PATH
+        # ! check this
+        - git clone https://github.com/flutter/flutter.git -b beta --depth 1
+        - flutter doctor -v
 
         # Wait for emulator to finish startup.
         - ./script/android-wait-for-emulator.sh
         - adb shell input keyevent 82
         - flutter devices
-      before_script:
+      # before_script:
         # Clone Flutter
         # We clone the Flutter beta branch. You should clone whatever branch
         # you know works for building production apps.
@@ -121,8 +149,8 @@ jobs:
         # but we started the project before stable existed and whilst beta has always
         # worked reasonably well for us and we find stable is usually too outdated
         # and has too many missing framework features.
-        - git clone https://github.com/flutter/flutter.git -b beta --depth 1
-        - flutter doctor -v
+        # - git clone https://github.com/flutter/flutter.git -b beta --depth 1
+        # - flutter doctor -v
 
       script: travis_retry flutter driver test_driver/app.dart
     - <<: *integration-test-stage
