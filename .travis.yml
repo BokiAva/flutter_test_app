@@ -193,7 +193,7 @@ jobs:
 
 before_install:
   # check if hardware acceleration is enabled
-  - cat /proc/cpuinfo|grep vmx
+  # - cat /proc/cpuinfo|grep vmx
 
   - java -version
 
